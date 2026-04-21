@@ -121,6 +121,6 @@ When it messes up, just press F9 again and correct it.
 
 ## Built by
 
-David, Lagos Nigeria.
+David.
 
 If you build something cool with this, let me know.
