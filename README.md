@@ -42,32 +42,47 @@ All by itself. In about 5 seconds.
 
 ## How to get it running
 
-You need two things: **Python** and **Ollama**.
+Pick one option depending on your PC.
 
-**Ollama** is the AI brain. It runs on your own computer so nothing gets sent anywhere. Download it at [ollama.com/download](https://ollama.com/download). Free, takes 2 minutes to install.
+---
 
-After installing Ollama, open your terminal and run:
+### Option 1: Groq (easiest — works on any PC, no downloads)
 
-```bash
-ollama pull llama3.1
+Groq is a free cloud AI. No GPU needed, no 5GB downloads, works on even the oldest laptop.
+
+1. Get a free API key at [console.groq.com](https://console.groq.com) (takes 1 minute)
+2. Open `agent.py` and paste your key on line 18:
+```python
+GROQ_API_KEY = "paste_your_key_here"
 ```
-
-This downloads the AI model (~5GB). Do it once, never again.
-
-Then install the Python stuff:
-
+3. Install dependencies:
 ```bash
 pip install pyautogui pillow requests pynput
 ```
-
-Open `agent.py`, find line 9, change it to:
-
-```python
-OLLAMA_URL = "http://localhost:11434"
+4. Run:
+```bash
+python agent.py
 ```
 
-Then run it:
+That's it. No model downloads. Works on 4GB RAM.
 
+---
+
+### Option 2: Ollama (fully local — nothing leaves your machine)
+
+If you want everything to run on your own PC with no internet dependency:
+
+1. Install [Python 3.10+](https://www.python.org/downloads/) if you don't have it
+2. Download [Ollama](https://ollama.com/download) and install it
+3. Pull a model (download once, ~5GB):
+```bash
+ollama pull llama3.1
+```
+4. Install dependencies:
+```bash
+pip install pyautogui pillow requests pynput
+```
+5. Make sure `GROQ_API_KEY` in `agent.py` line 18 is empty (default), then run:
 ```bash
 python agent.py
 ```
@@ -76,9 +91,7 @@ python agent.py
 
 ## Using it
 
-Press **F9** anywhere on your screen. Type your command. Hit OK.
-
-Some things you can try:
+Press **F9** anywhere on your screen. A box pops up. Type your command. Hit OK.
 
 ```
 open chrome
@@ -86,40 +99,52 @@ open notepad and type my name is David
 select all and delete
 open calculator
 copy everything on screen
+press ctrl+z three times
 ```
 
 ---
 
 ## The two modes
 
-**Normal mode**: just type your command. Fast, about 5 seconds. The AI uses its brain to figure out what to do without looking at your screen.
+**Normal mode** — just type your command. Fast (~5 seconds). Best for opening apps, typing, shortcuts.
 
-**Look mode**: add `look:` before your command. The AI takes a screenshot first, sees exactly what's on your screen, then acts. Slower (30-60 seconds) but smarter for complicated stuff.
+**Look mode** — add `look:` before your command. Lizzarss takes a screenshot first so the AI can literally see your screen before acting. Slower (30-60s) but smarter for anything visual.
 
 ```
 look: click the submit button on this page
 look: what app is open right now, close it
+look: fill in the first form field with my name
 ```
 
 ---
 
 ## It's not perfect (yet)
 
-Sometimes it clicks in the wrong place. Sometimes it misses a step. That's because the AI is guessing what to do based on your words. It gets better the more specific you are.
+Sometimes it clicks in the wrong place. Sometimes it misses a step. It gets better the more specific you are.
 
 Bad: `open my thing`
 Good: `open notepad and type hello`
 
-When it messes up, just press F9 again and correct it.
+When it messes up, press F9 again and correct it.
 
 ---
 
 ## What you need
 
 - Windows 10 or 11
-- Python 3.10 or newer
-- About 5GB free space for the AI model
-- Ollama installed
+- [Python 3.10+](https://www.python.org/downloads/)
+- Either a free [Groq API key](https://console.groq.com) OR [Ollama](https://ollama.com/download) installed locally
+
+---
+
+## Useful resources
+
+- [Get a free Groq API key](https://console.groq.com) — fastest way to get started
+- [Download Ollama](https://ollama.com/download) — run AI locally on your PC
+- [Download Python](https://www.python.org/downloads/) — needed to run Lizzarss
+- [pyautogui docs](https://pyautogui.readthedocs.io) — the library that controls your mouse and keyboard
+- [Groq model list](https://console.groq.com/docs/models) — swap to a different model if you want
+- [Ollama model library](https://ollama.com/library) — all models you can run locally
 
 ---
 
@@ -144,6 +169,14 @@ This is just the starting point. Here's what you could add:
 **Phone mirroring:** combine with Android screen mirroring to control your phone from your PC with plain English commands.
 
 If you build any of these, share it.
+
+---
+
+## The Challenge
+
+There is an open challenge to extend Lizzarss into something nobody has built yet.
+
+See [CHALLENGE.md](CHALLENGE.md) for full details.
 
 ---
 
