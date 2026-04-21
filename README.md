@@ -46,7 +46,7 @@ Pick one option depending on your PC.
 
 ---
 
-### Option 1: Groq (easiest — works on any PC, no downloads)
+### Option 1: Groq (easiest works on any PC, no downloads)
 
 Groq is a free cloud AI. No GPU needed, no 5GB downloads, works on even the oldest laptop.
 
@@ -68,7 +68,7 @@ That's it. No model downloads. Works on 4GB RAM.
 
 ---
 
-### Option 2: Ollama (fully local — nothing leaves your machine)
+### Option 2: Ollama (fully local nothing leaves your machine)
 
 If you want everything to run on your own PC with no internet dependency:
 
@@ -106,9 +106,9 @@ press ctrl+z three times
 
 ## The two modes
 
-**Normal mode** — just type your command. Fast (~5 seconds). Best for opening apps, typing, shortcuts.
+**Normal mode** just type your command. Fast (~5 seconds). Best for opening apps, typing, shortcuts.
 
-**Look mode** — add `look:` before your command. Lizzarss takes a screenshot first so the AI can literally see your screen before acting. Slower (30-60s) but smarter for anything visual.
+**Look mode** add `look:` before your command. Lizzarss takes a screenshot first so the AI can literally see your screen before acting. Slower (30-60s) but smarter for anything visual.
 
 ```
 look: click the submit button on this page
@@ -139,12 +139,13 @@ When it messes up, press F9 again and correct it.
 
 ## Useful resources
 
-- [Get a free Groq API key](https://console.groq.com) — fastest way to get started
-- [Download Ollama](https://ollama.com/download) — run AI locally on your PC
-- [Download Python](https://www.python.org/downloads/) — needed to run Lizzarss
-- [pyautogui docs](https://pyautogui.readthedocs.io) — the library that controls your mouse and keyboard
-- [Groq model list](https://console.groq.com/docs/models) — swap to a different model if you want
-- [Ollama model library](https://ollama.com/library) — all models you can run locally
+- [Lizzarss on GitHub](https://github.com/TeenovateX-Labs-Open-Source/lizzarss) the full source code, fork it from here
+- [Get a free Groq API key](https://console.groq.com) fastest way to get started, no downloads needed
+- [Download Ollama](https://ollama.com/download) run AI locally on your PC
+- [Download Python](https://www.python.org/downloads/) needed to run Lizzarss
+- [pyautogui docs](https://pyautogui.readthedocs.io) the library that controls your mouse and keyboard
+- [Groq model list](https://console.groq.com/docs/models) swap to a different AI model if you want
+- [Ollama model library](https://ollama.com/library) all models you can run locally
 
 ---
 
