@@ -123,6 +123,30 @@ When it messes up, just press F9 again and correct it.
 
 ---
 
+## Ideas to build on this
+
+This is just the starting point. Here's what you could add:
+
+**Browser control:** make it open Chrome and actually navigate websites. Search Google, scroll Twitter, fill forms on any site, read your emails out loud.
+
+**Morning routine:** save a sequence of tasks under one word. Say "morning" and it opens your browser, checks Gmail, loads your current project, all by itself.
+
+**Form filler:** store your name, email, address once. Then just say "fill this form" on any website and it populates everything automatically.
+
+**Voice trigger:** instead of pressing F9, just say "hey lizzarss" out loud and the popup appears. Fully hands-free.
+
+**App-specific shortcuts:** teach it your workflow. "push my code" runs git add, commit, push. "new component" creates a file and opens it in VS Code.
+
+**Scheduled tasks:** run something every morning at 8am without you touching anything. Open your to-do list, clear your downloads folder, back up your files.
+
+**Multi-screen awareness:** take a screenshot, let the AI describe everything it sees, then decide what to click based on what's actually on screen.
+
+**Phone mirroring:** combine with Android screen mirroring to control your phone from your PC with plain English commands.
+
+If you build any of these, share it.
+
+---
+
 ## Built by
 
 David.
